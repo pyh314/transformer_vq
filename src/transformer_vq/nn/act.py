@@ -1,7 +1,7 @@
 import jax
 import jax.numpy as jnp
 
-
+# 这里定义了几个激活函数
 def glu(x):
     xf, xg = jnp.split(x, 2, axis=-1)
     return xf * jax.nn.sigmoid(xg)

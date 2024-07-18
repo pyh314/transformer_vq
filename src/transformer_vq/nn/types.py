@@ -13,7 +13,7 @@ Shape = List[int]
 Dtype = Any
 Initializer = Callable[[PRNGKey, Shape, Dtype], Array]
 
-
+#dataclasses模块定义了几个为我们提供了一种更简洁、更优雅地定义数据类的方式。后面的则是在dataclasses语法下定义的类型
 @struct.dataclass
 class TransformerConfig:
     param_dtype: Dtype
