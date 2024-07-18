@@ -11,7 +11,7 @@ class Embeddings(nn.Module): # 所有的层都是nn.Module类的子层
 
     def setup(self):
         self.apply_config()
-        emb_args = [self.e_init, [self.n_vocab, self.d_model], self.param_dtype]
+        emb_args = [self.e_init, [self.n_vocab, self.d_model], self.param_dtype] #列表内部的元素可以不是同一种数字类型，所以列表里面套列表也不稀奇
         self.embs = self.param("embs", *emb_args)
         bias_out_args = [self.b_init, [self.n_vocab], self.param_dtype]
         self.bias_out = self.param("bias_out", *bias_out_args)
