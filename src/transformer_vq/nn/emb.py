@@ -15,7 +15,7 @@ class Embeddings(nn.Module): # 所有的层都是nn.Module类的子层
         self.embs = self.param("embs", *emb_args)
         bias_out_args = [self.b_init, [self.n_vocab], self.param_dtype]
         self.bias_out = self.param("bias_out", *bias_out_args)
-
+# 在Python中，dataclasses.asdict 是一个函数，它的作用是将一个带有 dataclass 装饰器的类的实例转换成一个字典。
     def apply_config(self):
         for k, v in dataclasses.asdict(self.config).items():
             setattr(self, k, v)
