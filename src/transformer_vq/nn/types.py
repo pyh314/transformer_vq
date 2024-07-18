@@ -73,3 +73,8 @@ class TransformerConfig:
         filtered["b_init"] = inits.zeros
 
         return cls(**filtered)
+'''
+在Python中，@classmethod 是一个装饰器，用于将一个方法定义为类方法。
+类方法是一种特殊类型的方法，它属于类而不是类的实例。
+这意味着类方法可以被类本身调用，也可以被类的实例调用，但它们的第一个参数总是指向类本身，而不是类的实例。
+'''
