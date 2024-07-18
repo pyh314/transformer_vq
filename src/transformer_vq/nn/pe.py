@@ -6,8 +6,8 @@ import jax.numpy as jnp
 
 from transformer_vq.nn.types import TransformerConfig
 
-
-def get_sinusoid_embs(length, width, lam, flip, start=0):
+# pe指positional encoding，位置编码
+def get_sinusoid_embs(length, width, lam, flip, start=0): # sinusoid 位置编码
     pos_seq = start + jnp.arange(length)
     chex.assert_shape(pos_seq, [length])
     inv_lams = 1 / (lam ** (jnp.arange(0, width, 2) / width))
