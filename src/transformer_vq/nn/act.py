@@ -1,5 +1,6 @@
 import jax
 import jax.numpy as jnp
+#激活层函数的选择
 
 # 这里定义了几个激活函数
 def glu(x):

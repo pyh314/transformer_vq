@@ -6,7 +6,7 @@ import jax.numpy as jnp
 from transformer_vq.nn.types import Dtype
 
 
-class LayerNorm(nn.Module):
+class LayerNorm(nn.Module): # Base class for all neural network modules. Layers and models should subclass this class
     input_dim: int
     param_dtype: Dtype
     center: bool = False  # rms layer norm by default

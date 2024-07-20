@@ -12,7 +12,7 @@ def st(x):
 
 def maybe_remat(module, enabled):
     if enabled:
-        return nn.remat(module)
+        return nn.remat(module) 
     else:
         return module
 '''
