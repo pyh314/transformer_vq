@@ -112,3 +112,4 @@ python3 scripts/launch.py \
   --out_checkpoint_dir="$OUTPUT_CHECKPOINT_DIR" \
   --model_name=transformer_vq_enwik8 \
   --run_id="$WB_RUN_ID"
+# WANDB_KEY:1df2803401043f9ce7e18a93688d4cb47d815571
