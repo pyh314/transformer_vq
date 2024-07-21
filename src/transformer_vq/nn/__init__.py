@@ -1,0 +1,3 @@
+#用Vscode连接MobaXterm的Anaconda虚拟环境
+#如果直接在VScode上改代码并保存，再在MobaXterm上打开会直接看到改动，因为都是连接的同一台云服务器
+#但是这里的改动不能实时传递到github上面，github上直接做改动也没办法直接传递到这里
